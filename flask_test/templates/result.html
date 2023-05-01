@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>flask_title</title>
+</head>
+<body>
+  <h1 id='url'>HI,</h1>
+  <a style="margin-left:20px" href="/form"><font size="4">return to the previous page</font size></a>
+
+    {% if data_rows != undefined %}
+    <h2>Data : </h2>
+    <table border="1">
+        {% for Name in data_rows %}
+        <tr>
+            <th> {{ Name[0] }} </th>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+</body>
+<script>
+  var url = location.href;
+  var str = url.split('/');
+  text = str[5] + " you are using " + str[4] + " to get data : " + str[3];
+  //localhost:5000 = str[2]
+  document.getElementById('url').innerHTML += text ;
+</script>
+</html>

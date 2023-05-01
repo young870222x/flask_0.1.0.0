@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>flask_title</title>
+</head>
+<body>
+  {% if data != undefined %}
+  <h2>Data : </h2>
+  <table border="1">
+      {% for key, value in data.items() %}
+      <tr>
+          <th> {{ key }} </th>
+          <td> {{ value }} </td>
+      </tr>
+      {% endfor %}
+  </table>
+  {% endif %}
+</body>
+</html>

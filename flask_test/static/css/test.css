@@ -1,0 +1,47 @@
+* {
+    /*設定元素與元素之間的上邊界間距。*/
+    margin: 0;
+    /*padding 是負責調整 元素內所有內容與元素自身 的邊界間距，屬於元素內部的邊界調整。*/
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.top {
+    height: 50px;
+    background-color: aqua;
+    
+}
+.banner {
+    width: 980px;
+    height: 150px;
+    background-color: bisque;
+    /*auto 置中*/
+    margin: 10px auto;
+
+}
+.box {
+    width: 980px;
+    margin: 0 auto;
+    height: 700px;
+    background-color: brown;
+}
+/*box內的li標籤*/
+.box li{
+    /*float: left; 使li 水平檢視*/
+    float: left;
+    width: 237px; 
+    height: 300px;
+    background-color: pink;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.box .last{
+    /*最右邊的不需要邊界*/
+    margin-right:0 ;
+}
+.footer {
+    height: 200px;
+    background-color: gray;
+    margin-top: 50px;
+}
